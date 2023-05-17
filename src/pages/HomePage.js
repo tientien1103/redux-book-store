@@ -52,7 +52,7 @@ const HomePage = () => {
         <Typography variant="h3" sx={{ textAlign: "center" }}>
           Book Store
         </Typography>
-        {dataBooks.error && <Alert severity="danger">{dataBooks.error}</Alert>}
+        {dataBooks.error && <Alert severity="error">{dataBooks.error}</Alert>}
         <FormProvider methods={methods} onSubmit={handleSubmit(onSubmit)}>
           <Stack
             spacing={2}
